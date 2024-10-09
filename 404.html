@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='/%25GH_PAGES%25/#/%25GH_PATH%25'" />
+    <script type="text/javascript">
+      let segmentCount = 0;
+      let locationSegments = window.location.pathname.split('/').filter(i => i);
+      let redirect = '/' + locationSegments.slice(0, segmentCount + 1).join('/') + '/#/' + locationSegments.slice(segmentCount + 1).join('/');
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body></body>
+</html>
